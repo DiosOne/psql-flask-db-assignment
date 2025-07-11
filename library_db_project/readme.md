@@ -1,5 +1,24 @@
 # Library Database
 
+## Setup
+- Create a new database `createdb library_db`
+- Connect to database `psql -U postgres -d library_db` or `sudo -u postgres psql -d library_db` for Linux
+- Run Scripts in order
+    1. `\i schema/01_create_tables.sql`
+    2. `\i seed/02_insert_seed_data.sql`
+    3. Run these in order to demonstrate CRUD
+
+            \i operations/03_select_queries.sql
+            \i operations/04_insert_operations.sql
+            \i operations/05_update_delete.sql
+            \i operations/06_order_filter_calculate.sql
+
+---
+
+## Optional - Reset the database
+To drop all tables and reseed the database for clean testing
+
+`\i reset_db.sql`
 ## Scripts Overview
 
 ### **Schema**
@@ -30,24 +49,3 @@
   - `05_update_delete.sql` – Updates and deletes existing records while demonstrating cascading behavior.  
   - `06_order_filter_calculate.sql` – Demonstrates ordering, filtering, and aggregate functions.  
 - **Purpose**: Demonstrates CRUD operations and advanced querying for assessment requirements.
-
----
-
-## How To Run
-
-1. Connect to your database:
-
-```bash
-psql -U postgres -d library_db
-```
-
-2. Run scripts in order
-
-```sql
-\i schema/01_create_tables.sql
-\i seed/02_insert_seed_data.sql
-\i operations/03_select_queries.sql
-\i operations/04_insert_operations.sql
-\i operations/05_update_delete.sql
-\i operations/06_order_filter_calculate.sql
-```
