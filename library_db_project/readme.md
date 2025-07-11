@@ -1,6 +1,7 @@
 # Library Database
 
 ## Setup
+
 - Create a new database `createdb library_db`
 - Connect to database `psql -U postgres -d library_db` or `sudo -u postgres psql -d library_db` for Linux
 - Run Scripts in order
@@ -16,9 +17,11 @@
 ---
 
 ## Optional - Reset the database
+
 To drop all tables and reseed the database for clean testing
 
 `\i reset_db.sql`
+
 ## Scripts Overview
 
 ### **Schema**
