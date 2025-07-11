@@ -1,6 +1,6 @@
 -- add new member
-INSERT INTO Members (FirstName, LastName, Email)
-VALUES ('David', 'Green', 'd.green@email.com');
+INSERT INTO Members (FirstName, LastName, Email, JoinDate)
+VALUES ('David', 'Green', 'd.green@email.com', DEFAULT);
 
 -- add loan with FK data
 INSERT INTO Loans (BookID, MemberID, StaffID, DueDate)

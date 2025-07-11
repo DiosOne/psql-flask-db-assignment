@@ -1,3 +1,6 @@
+-- clear existing data and reset serial id's
+TRUNCATE TABLE Loans, Books, Authors, Members, Staff RESTART IDENTITY CASCADE;
+
 -- authors
 INSERT INTO Authors (FirstName, LastName, Nationality) VALUES
 ('Terry', 'Pratchett', 'British'),
