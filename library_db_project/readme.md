@@ -38,7 +38,7 @@
 1. Connect to your database:
 
 ```bash
-psql -u postgres -d library_db
+psql -U postgres -d library_db
 ```
 
 2. Run scripts in order
