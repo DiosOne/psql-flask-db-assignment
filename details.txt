@@ -1,1 +1,0 @@
-Basic (I hope) library structure for the sql assignment
