@@ -7,7 +7,8 @@ SELECT * FROM Books
 WHERE Genre = 'Fantasy';
 
 -- calculate loans by staff member
-SELECT Staff.FirstName, COUNT(Loans.LoanID) AS TotalLoans
+SELECT Staff.FirstNameT(Loans.LoanID) AS, COUN TotalLoans
 FROM Loans
 JOIN Staff ON Loans.StaffID = Staff.StaffID
 GROUP BY Staff.FirstName;
+
