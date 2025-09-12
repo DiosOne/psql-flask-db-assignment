@@ -14,7 +14,8 @@ def get_db_connection():
         host=os.getenv("DB_HOST", "localhost"),
         database=os.getenv("DB_NAME", "library_db"),
         user=os.getenv("DB_USER", "postgres"),
-        password=os.getenv("DB_PASS", "")
+        password=os.getenv("DB_PASS", ""),
+        port=os.getenv("DB_PORT", 5432)
     )
     return conn
 
@@ -125,7 +126,6 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 # AUTHORS ENDPOINTS
-
 
 # Get all authors
 @app.route('/authors', methods=['GET'])
