@@ -22,6 +22,10 @@ def get_db_connection():
 # --- ROUTES ---
 
 # Read all books
+@app.route('/')
+def home():
+    return jsonify({"message": "Library API is running. Try /books"})
+
 @app.route('/books', methods=['GET'])
 def get_books():
     conn = get_db_connection()
