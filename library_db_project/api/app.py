@@ -22,11 +22,12 @@ def get_db_connection():
 
 # --- ROUTES ---
 
-# Read all books
+
 @app.route('/')
 def home():
     return jsonify({"message": "Library API is running. Try /books"})
 
+# Read all books
 @app.route('/books', methods=['GET'])
 def get_books():
     conn = get_db_connection()
@@ -123,7 +124,10 @@ def delete_book(book_id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Use port from environment variable for deployed platforms
+    port = int(os.environ.get("PORT", 5000))
+    debug_mode = os.environ.get("FLASK_DEBUG", "False") == "True"
+    app.run(host='0.0.0.0', port=port, debug=debug_mode)
 
 # AUTHORS ENDPOINTS
 
