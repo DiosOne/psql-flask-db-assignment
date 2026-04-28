@@ -19,9 +19,9 @@ INSERT INTO Books (Title, ISBN, Genre, YearPublished, AuthorID) VALUES
 
 -- members
 INSERT INTO Members (FirstName, LastName, Email, JoinDate) VALUES
-('Chris', 'Sheehan', 'c.sheehan@email.com', '2025-05-01'),
+('Alex', 'Morgan', 'alex.morgan@email.com', '2025-05-01'),
 ('Steve', 'Dave', 'stevedave@email.com', '2025-08-06'),
-('Josh', 'Burrows', 'j.burrows@email.com', '2025-06-01');
+('Taylor', 'Reed', 'taylor.reed@email.com', '2025-06-01');
 
 -- staff
 INSERT INTO Staff (FirstName, LastName, Role, Email) VALUES
