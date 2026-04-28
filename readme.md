@@ -77,6 +77,12 @@ By default, the API will be available locally at:
 You can also test the deployed version here:  
 <https://dev1002-a3.onrender.com/>
 
+### Screenshots from Render
+
+<img src="library_db_project/screenshots/psql%201.png" alt="books endpoint on Render" width="500">
+<img src="library_db_project/screenshots/psql%202.png" alt="authors endpoint on Render" width="500">
+<img src="library_db_project/screenshots/psql%204.png" alt="members endpoint on Render" width="500">
+
 ---
 
 ## **Future**

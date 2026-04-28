@@ -79,9 +79,9 @@ You can also test the deployed version here:
 
 ### Screenshots from Render
 
-<img src="screenshots/psql 1.png" alt="books endpoint on Render" width="500">
-<img src="screenshots/psql 2.png" alt="authors endpoint on Render" width="500">
-<img src="screenshots/psql 4.png" alt="members endpoint on Render" width="500">
+<img src="screenshots/psql%201.png" alt="books endpoint on Render" width="500">
+<img src="screenshots/psql%202.png" alt="authors endpoint on Render" width="500">
+<img src="screenshots/psql%204.png" alt="members endpoint on Render" width="500">
 
 ---
 
